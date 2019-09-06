@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Name: Joseph Varilla
+    Date: 6/10/2019
+    Final Project
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightCyan"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:layout_gravity="center_vertical"
+    tools:context=".LoanActivity">
+
+    <TextView
+        android:id="@+id/dspLoanData"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/mark_as_paid_btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="@string/mark_as_paid_btn_label"
+        android:onClick="markLoanAsPaid"
+        android:textSize="30sp"/>
+
+</LinearLayout>

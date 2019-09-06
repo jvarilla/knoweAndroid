@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Name: Joseph Varilla
+    Date: 6/10/2019
+    Final Project
+-->
+<resources>
+    <color name="colorPrimary">#00ACC1</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FF9527</color>
+    <color name="lightCyan">#A7EEF8</color>
+    <color name="medCyan">#61E1F1</color>
+    <color name="lightGray">#E0E2E4</color>
+    <color name="medGray">#DDDADA</color>
+</resources>

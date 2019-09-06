@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Name: Joseph Varilla
+    Date: 6/10/2019
+    Final Project
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/lightCyan"
+        android:orientation="vertical">
+
+        <!-- Form Title -->
+        <TextView
+            android:id="@+id/formtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/owe_knowe"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="30sp"/>
+
+        <!-- #1 Spinner - Choose If you are owed or not (2) -->
+        <Spinner
+            android:id="@+id/spnnr_owe1"
+            android:layout_width="389dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/white"
+            android:entries="@array/owedOptions"
+            android:minHeight="45dp"
+            android:textSize="36sp" />
+
+        <!-- #2 amount of money (3)-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dollar_sign"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/amount_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:inputType="numberDecimal"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textSize="30sp"/>
+
+        <!-- #3 Borrower/Lender First Name -->
+        <EditText
+            android:id="@+id/ofname_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name_hint"
+            android:textSize="30sp"/>
+
+        <!-- #4 Borrower/Lender Last Name -->
+        <EditText
+            android:id="@+id/olname_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name_hint"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_label"
+            android:textSize="30sp"/>
+
+        <!-- #5 Borrower/Lender Email -->
+        <EditText
+            android:id="@+id/ophone_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:inputType="phone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to_be_paid_by"
+            android:textSize="30sp"/>
+
+        <!-- #6 Date Picker (1) -->
+        <DatePicker
+            android:id="@+id/due_date_picker1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alerts_label"
+            android:textSize="30sp"/>
+
+        <!-- #7 Receive Alerts -->
+        <ToggleButton
+            android:id="@+id/alert_toggle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textOff="@string/don_t_receive_alerts"
+            android:textOn="@string/receive_alerts"
+            android:textSize="30sp" />
+
+        <!-- #8 Certify With Signature (4) -->
+        <CheckBox
+            android:id="@+id/affirm_checkbox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/certify_statement"
+            android:textSize="30sp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitBtn1"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:text="@string/submit_btn_label"
+            android:onClick="submitForm"
+            android:textSize="30sp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

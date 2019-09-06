@@ -1,0 +1,30 @@
+<!--
+    Name: Joseph Varilla
+    Date: 6/10/2019
+    Final Project
+-->
+<resources>
+    <string name="app_name">FinalProjectVarilla</string>
+    <string name="owe_knowe">Owe Knowe</string>
+    <string name="dollar_sign">$</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="to">TO</string>
+    <string name="certify_statement">I Affirm That This Information Is True</string>
+    <string name="contact_label">Who I Can Contact At</string>
+    <string name="to_be_paid_by">To Be Paid By</string>
+    <string name="don_t_receive_alerts">NOT Receive Alerts</string>
+    <string name="receive_alerts">Receive Alerts</string>
+    <string name="submit_btn_label">Submit</string>
+    <string name="alerts_label">I Want To</string>
+    <string name="certify_warning">Please Check That You Agree To These Terms</string>
+    <string name="i_owe_label">I Owe</string>
+    <string name="i_lent_label">I Lent</string>
+    <string name="field_headers">Amount \t 2nd Party \t Due Date</string>
+    <string name="paid_label">Paid</string>
+    <string name="mark_as_paid_btn_label">Mark As Paid</string>
+    <string-array name="owedOptions">
+        <item>I Owe</item>
+        <item>I Loaned</item>
+    </string-array>
+</resources>
